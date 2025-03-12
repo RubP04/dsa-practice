@@ -3,7 +3,7 @@ def binarySearch(sortedList, target):
     end = len(sortedList) - 1
 
     while start <= end:
-        middle = (start + end) // 2
+        middle = (end - start) // 2 + start
         if sortedList[middle] == target:
             return middle
         elif sortedList[middle] > target:
